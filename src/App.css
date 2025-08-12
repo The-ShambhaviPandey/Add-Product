@@ -1,28 +1,33 @@
+/* ===== Container ===== */
 .add-product {
   width: 100%;
   max-width: 1700px;
-  margin-right: 200px;
-  margin-left: 100px;
   margin: auto;
   background: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
+  margin-top: 37px;
 }
 
+/* ===== Headings ===== */
 .add-product h2 {
   text-align: center;
   font-size: 30px;
+  color:#20BFA5;
 }
 
-.add-product label {
-  display: block;
-  margin-top: 10px;
+/* ===== Labels ===== */
+.add-product label,
+.form-col label {
   font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
+/* ===== Inputs, Selects, Textareas ===== */
 .add-product input,
-.add-product textarea,
-.add-product select {
+.add-product select,
+.add-product textarea {
   width: 100%;
   padding: 10px;
   margin-top: 4px;
@@ -34,31 +39,56 @@
   box-sizing: border-box;
 }
 
-/* Force textarea to match input height unless manually resized */
-.add-product textarea {
-  resize: vertical;
-  height: 40px;
-  min-height: 40px;
-}
-
-/* Make select height consistent */
+/* Specific element tweaks */
 .add-product select {
   height: 40px;
 }
 
+.add-product textarea {
+  resize: vertical;
+  min-height: 40px;
+}
 
+.big-textarea {
+  height: 170px; /* Large description box */
+}
+
+/* ===== Form Layout ===== */
+.product-form {
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.form-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Buttons ===== */
 .publish-btn {
   background: #20BFA5;
   color: white;
-  padding: 10px;
+  padding: 20px;
   width: 100%;
   border: none;
-  margin-top: 15px;
+  margin-top: 50px;
   cursor: pointer;
-  border-radius: 4px;
-  font-size: 16px;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: background 0.3s ease;
 }
 
 .publish-btn:hover {
-  background: #20BFA5;
+  background: #17a18b;
 }
+
