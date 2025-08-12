@@ -53,16 +53,28 @@ export default function AddProduct() {
         <input type="number" name="discount" value={formData.discount} onChange={handleChange} />
 
         <label>Category</label>
-        <input type="text" name="category" value={formData.category} onChange={handleChange} />
+          <select name="category" value={formData.category} onChange={handleChange}>
+            <option value="">-- Select Category --</option>
+            <option value="painting">Painting</option>
+            <option value="craft">Craft</option>
+            <option value="sculpture">Sculpture</option>
+            <option value="jewelry">Jewelry</option>
+          </select>
 
         <label>Subcategory</label>
-        <input type="text" name="subcategory" value={formData.subcategory} onChange={handleChange} />
+          <select name="subcategory" value={formData.subcategory} onChange={handleChange}>
+            <option value="">-- Select Subcategory --</option>
+            <option value="oil-painting">Oil Painting</option>
+            <option value="watercolor">Watercolor</option>
+            <option value="paper-craft">Paper Craft</option>
+            <option value="wood-craft">Wood Craft</option>
+          </select>
 
         <label>Rating</label>
         <input type="number" min="1" max="5" name="rating" value={formData.rating} onChange={handleChange} />
 
         <label for="inStock">In Stock</label>
-          <input type="number" id="inStock" name="inStock" min="0" placeholder="Enter quantity"></input>
+        <input type="number" id="inStock" name="inStock" min="0" placeholder="Enter quantity"></input>
           
 
 

@@ -1,6 +1,6 @@
 .add-product {
   width: 100%;
-  max-width: 1800px;
+  max-width: 1700px;
   margin-right: 200px;
   margin-left: 100px;
   margin: auto;
@@ -24,11 +24,28 @@
 .add-product textarea,
 .add-product select {
   width: 100%;
-  padding: 8px;
+  padding: 10px;
   margin-top: 4px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  font-size: 16px;
+  font-family: inherit;
+  line-height: 1.4;
+  box-sizing: border-box;
 }
+
+/* Force textarea to match input height unless manually resized */
+.add-product textarea {
+  resize: vertical;
+  height: 40px;
+  min-height: 40px;
+}
+
+/* Make select height consistent */
+.add-product select {
+  height: 40px;
+}
+
 
 .publish-btn {
   background: #20BFA5;
