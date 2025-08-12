@@ -6,13 +6,14 @@
   background: #f9f9f9;
   padding: 20px;
   border-radius: 8px;
-  margin-top: 37px;
+  margin-top: 30px;
+  border: 1px solid #000;
 }
 
 /* ===== Headings ===== */
 .add-product h2 {
   text-align: center;
-  font-size: 30px;
+  font-size: 35px;
   color:#20BFA5;
 }
 
